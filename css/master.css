@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+/* font-family: 'Indie Flower', cursive; */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{}
+
+.first{
+  position: relative;
+  width: 100%; height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg/backg-1.jpg);
+  background-size: cover;
+}
+
+#svg1{
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.first-content{
+  position: relative;
+  bottom: -60%;
+
+  max-width: 300px;
+  margin: 0 auto;
+
+  font-size: 25px;
+  display: block;
+}
+
+.first-content h1{
+  text-shadow: 0 0 10px ;
+  text-align: center;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}
+
+.first-content h1:nth-child(2){font-size: 50px;}
+
+.second{
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #161515;
+}
+
+
+
+.third{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg/backg-2.jpeg);
+  background-size: cover;
+}
+
+#svg3{
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .first-content{
+    position: relative;
+    top:60%;
+    left: 0%;
+}
+
+  .second{
+    background-size: 0%;
+  }
+
+  .work{flex-direction: column;}
+}
